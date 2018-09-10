@@ -35,6 +35,8 @@ names.append(2)
 del names[1]
 print(f"{names} and length = {len(names)}")
 print("What" in names)
+#print list with seperator
+print(*names, sep='|')
 print(names[1:-1], "\n")
 
 # loops
