@@ -1,5 +1,8 @@
 # stdout
 print("Hello World\n")
+# print without new line
+print("Hello ", end='')
+print("Universe")
 
 # data types
 answer: float = 2.6
