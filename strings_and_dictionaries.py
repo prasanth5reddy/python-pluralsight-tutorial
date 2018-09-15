@@ -40,4 +40,4 @@ for s in student:
 
 # Another way of getting key value pairs
 for key, value in student.items():
-    print(f"{key.rjust(10)} is {value}")
+    print(f"{key.rjust(max([len(key) for key in student]))} is {value}")
