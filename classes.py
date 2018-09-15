@@ -21,6 +21,9 @@ class Student:
     def __str__(self):
         return "Student " + self.name
 
+    def __add__(self, other):
+        return self.name + " " + other.name
+
     def get_name_capitalize(self):
         return self.name.capitalize()
 
@@ -55,3 +58,5 @@ class HighSchoolStudent(Student):
 james = HighSchoolStudent("james")
 print(james.get_name_capitalize())
 print(james.get_school_name())
+
+print(mark + james)
