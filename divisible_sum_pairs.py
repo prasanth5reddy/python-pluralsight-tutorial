@@ -18,13 +18,13 @@ def divisible_sum_pairs_2(n, k, ar):
     ans = 0
     for i in range(int(k / 2) + 1):
         if i == 0:
-            ans += (mod_count[0] * (mod_count[0] - 1)) / 2
+            ans += int(mod_count[0] * (mod_count[0] - 1) / 2)
         elif i == k - i:
-            ans += (mod_count[k / 2] * (mod_count[k / 2] - 1)) / 2
+            ans += int(mod_count[int(k / 2)] * (mod_count[int(k / 2)] - 1) / 2)
         else:
-            ans += (mod_count[i] * (mod_count[k - i]))
+            ans += int(mod_count[i] * (mod_count[k - i]))
 
-    return int(ans)
+    return ans
 
 
 n, k, ar = 7, 3, [1, 3, 2, 6, 4, 5, 9]
