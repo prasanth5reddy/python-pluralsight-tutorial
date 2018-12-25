@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 brics = pd.read_csv('brics.csv', index_col=0)
 
@@ -38,7 +39,6 @@ print(brics.groupby(['country'])['area', 'population'].count())
 
 # plotting by pandas
 brics.plot(kind='bar', x='country', y='area')
-import matplotlib.pyplot as plt
 
 plt.show()
 brics.plot(subplots=True)

@@ -1,4 +1,4 @@
-from hello import student
+from basic.data_types import student
 
 # STRINGS
 hello = 'hello\nworld'

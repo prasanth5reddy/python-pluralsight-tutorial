@@ -41,7 +41,7 @@ def add_student(name, student_id=332):
 
 def save_file(student):
     try:
-        f = open("students.txt", "a")
+        f = open("../classes/students.txt", "a")
         f.write(student + "\n")
         f.close()
     except Exception:
@@ -50,7 +50,7 @@ def save_file(student):
 
 def read_file():
     try:
-        f = open("students.txt", "r")
+        f = open("../classes/students.txt", "r")
         # for student in f.readlines():
         for student in read_students(f):
             add_student(student)
